@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | W06 Final Project Application</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task/w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html"  class="active">Project</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>W06 Final Project Application</h1>
+    <h2>Chuck Norris Jokes</h2>
+
+    <form id="input">
+      <label for="numberInput">How many jokes would you like to see? Enter a number between 1 and 3:</label>
+      <input type="number" id="numberInput" name="numberInput" min="1" max="3" required>
+    </form>
+
+    <select id="filtered" title="Choose a joke category.">
+      <option value="" disabled selected>Select Joke Category</option>
+      <option value="animal">Animal</option>
+      <option value="celebrity">Celebrity</option>
+      <option value="food">Food</option>
+      <option value="history">History</option>
+      <option value="money">Money</option>
+      <option value="movie">Movie</option>
+      <option value="music">Music</option>
+      <option value="political">Political</option>
+      <option value="sport">Sport</option>
+      <option value="travel">Travel</option>
+    </select>
+
+    <button id="submit">Submit</button>
+
+    <div id="jokes">
+    </div>
+  </main>
+
+
+  <footer>
+    &copy;<span id="year"></span> | W06 Final Project Application | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>

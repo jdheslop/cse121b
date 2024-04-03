@@ -279,6 +279,40 @@ footer {
     margin: .5rem;
 }
 
+
+
+/* Final Project */
+#filtered {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+}
+
+option {
+    text-align: center;
+}
+
+#input {
+    text-align: center;
+    margin: 20px;
+}
+
+#submit {
+    display: block;
+    margin: 20px auto;
+    width: 80px;
+    height: 40px;
+}
+
+p {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#jokes {
+    margin-bottom: 50px;
+}
+
 /* Media Queries */
 @media only screen and (min-width: 32.5em) {
     nav ul {
